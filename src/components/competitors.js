@@ -193,7 +193,6 @@ class CompetitorsView extends connect(store)(PageViewElement) {
 
     // This is called every time something is updated in the store.
     stateChanged(state) {
-        console.log(Object.values(state.form.competitors));
         this._competitors = Object.values(state.form.competitors);
         this._offbeat_enabled = state.form.offbeat.competing;
     }
